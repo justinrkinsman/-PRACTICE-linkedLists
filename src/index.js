@@ -1,5 +1,3 @@
-const { IgnorePlugin } = require("webpack");
-
 class Node {
     constructor(data, next = null){ //list doesn't have a next node by default
         this.data = data;

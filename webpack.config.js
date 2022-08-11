@@ -8,7 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    modules: [...],
     fallback: {
       "fs": false,
       "tls": false,
