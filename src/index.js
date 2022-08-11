@@ -1,3 +1,5 @@
+const { IgnorePlugin } = require("webpack");
+
 class Node {
     constructor(data, next = null){ //list doesn't have a next node by default
         this.data = data;
@@ -127,6 +129,20 @@ class LinkedList {
     getSize() {
         console.log(this.size)
     }
+
+    getHeadGiggity() {
+        console.log(this.head.data)
+    }
+
+    tail(){
+        let current = this.head;
+        while(current.next){
+            current = current.next;
+            //if(!current.next){
+                console.log(current)
+            //}
+        }
+    }
 }
 
 const ll = new LinkedList();
@@ -138,3 +154,7 @@ ll.insertAt(500, 10)
 ll.printListData()
 
 ll.getSize()
+
+ll.getHeadGiggity()
+
+//ll.tail()
